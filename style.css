@@ -1,0 +1,49 @@
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+  grid-column: 2 / 4;
+  font-size: 1.2rem;
+  background: var(--dark-bg);
+  padding: 2rem;
+  margin-bottom: 100vh;
+  border-radius: 20px;
+}
+
+section {
+  grid-column: 2 / 5;
+  font-size: 1rem;
+  background: var(--dark-bg);
+  padding: 1rem;
+  margin-bottom: var(--spacing);
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.left {
+  grid-column: 4 / 7;
+}
